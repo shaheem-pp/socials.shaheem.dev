@@ -1,13 +1,4 @@
-import {
-  ExternalLink,
-  Github,
-  Globe,
-  Instagram,
-  Linkedin,
-  Mail,
-  Twitter,
-  Youtube,
-} from "lucide-react";
+import { Github, Globe, Linkedin, Mail, Youtube } from "lucide-react";
 
 // ===================================
 // YOUR PROFILE INFORMATION
@@ -40,14 +31,14 @@ export const LINKS = [
   },
   {
     name: "GitHub",
-    url: "https://github.com/shaheem",
+    url: "https://github.com/shaheem-pp",
     icon: Github,
     description: "Check out my open source projects",
     featured: true,
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/shaheem",
+    url: "https://linkedin.com/in/shaheem-pp",
     icon: Linkedin,
     description: "Connect with me professionally",
     featured: true,
@@ -61,34 +52,34 @@ export const LINKS = [
   },
 
   // Secondary Links (can be hidden/shown)
-  {
-    name: "Twitter",
-    url: "https://twitter.com/shaheem",
-    icon: Twitter,
-    description: "Follow me for tech updates",
-    featured: false,
-  },
-  {
-    name: "Instagram",
-    url: "https://instagram.com/shaheem",
-    icon: Instagram,
-    description: "Behind the scenes content",
-    featured: false,
-  },
+  //   {
+  //     name: "Twitter",
+  //     url: "https://twitter.com/shaheem",
+  //     icon: Twitter,
+  //     description: "Follow me for tech updates",
+  //     featured: false,
+  //   },
+  //   {
+  //     name: "Instagram",
+  //     url: "https://instagram.com/shaheem",
+  //     icon: Instagram,
+  //     description: "Behind the scenes content",
+  //     featured: false,
+  //   },
   {
     name: "YouTube",
-    url: "https://youtube.com/@shaheem",
+    url: "https://youtube.com/@shaheempp",
     icon: Youtube,
     description: "Tech tutorials and vlogs",
     featured: false,
   },
-  {
-    name: "Blog",
-    url: "https://shaheem.dev/blog",
-    icon: ExternalLink,
-    description: "Read my latest articles",
-    featured: false,
-  },
+  //   {
+  //     name: "Blog",
+  //     url: "https://shaheem.dev/blog",
+  //     icon: ExternalLink,
+  //     description: "Read my latest articles",
+  //     featured: false,
+  //   },
 ] as const;
 
 // ===================================
