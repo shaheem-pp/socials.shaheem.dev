@@ -28,7 +28,7 @@ export default function ProfileCard() {
       <p className="text-xl text-gray-300 mb-4">{PROFILE.title}</p>
 
       {/* Bio */}
-      <p className="text-gray-400 text-sm leading-relaxed max-w-sm mx-auto">
+      <p className="text-gray-400 text-sm leading-relaxed max-w-sm mx-auto text-justify">
         {PROFILE.bio}
       </p>
 

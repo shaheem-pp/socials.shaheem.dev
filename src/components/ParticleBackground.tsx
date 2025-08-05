@@ -29,16 +29,17 @@ export default function ParticleBackground() {
 
     const createParticles = () => {
       const particles: Particle[] = [];
-      const particleCount = Math.floor((canvas.width * canvas.height) / 15000);
+      // Increased particle density - more particles per screen area
+      const particleCount = Math.floor((canvas.width * canvas.height) / 8000); // Changed from 15000 to 8000
 
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          size: Math.random() * 3 + 1,
-          speedX: (Math.random() - 0.5) * 0.5,
-          speedY: (Math.random() - 0.5) * 0.5,
-          opacity: Math.random() * 0.5 + 0.1,
+          size: Math.random() * 4 + 1, // Slightly larger particles (1-5px)
+          speedX: (Math.random() - 0.5) * 0.8, // Faster movement
+          speedY: (Math.random() - 0.5) * 0.8,
+          opacity: Math.random() * 0.6 + 0.1, // More visible particles
         });
       }
 
@@ -56,9 +57,9 @@ export default function ParticleBackground() {
         if (particle.y > canvas.height) particle.y = 0;
         if (particle.y < 0) particle.y = canvas.height;
 
-        // Subtle opacity animation
-        particle.opacity += (Math.random() - 0.5) * 0.01;
-        particle.opacity = Math.max(0.05, Math.min(0.4, particle.opacity));
+        // Subtle opacity animation with more variation
+        particle.opacity += (Math.random() - 0.5) * 0.015; // Increased variation
+        particle.opacity = Math.max(0.05, Math.min(0.6, particle.opacity)); // Higher max opacity
       });
     };
 

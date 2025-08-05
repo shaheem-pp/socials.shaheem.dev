@@ -1,7 +1,21 @@
 {
-  "name": "linktree-shaheem-dev",
-  "version": "0.1.0",
+  "name": "socials-shaheem-dev",
+  "version": "1.0.0",
   "private": true,
+  "description": "A modern, minimalistic Linktree-style personal links site",
+  "author": "Shaheem <mail@shaheem.dev>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaheem-pp/socials.shaheem.dev.git"
+  },
+  "homepage": "https://socials.shaheem.dev",
+  "keywords": [
+    "linktree",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "personal-website"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

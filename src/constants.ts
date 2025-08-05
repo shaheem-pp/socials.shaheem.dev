@@ -1,4 +1,4 @@
-import { Github, Globe, Linkedin, Mail, Youtube } from "lucide-react";
+import { FileText, Github, Globe, Linkedin, Mail, Youtube } from "lucide-react";
 
 // ===================================
 // YOUR PROFILE INFORMATION
@@ -7,7 +7,7 @@ import { Github, Globe, Linkedin, Mail, Youtube } from "lucide-react";
 export const PROFILE = {
   name: "Shaheem",
   title: "Product Engineer",
-  bio: "Building digital experiences with modern technologies. Passionate about clean code, user experience, and continuous learning.",
+  bio: "Hey! 👋 I'm passionate about turning ideas into beautiful, functional digital experiences. When I'm not coding, you'll find me exploring the latest tech trends or sharing what I've learned with the community.",
   avatar: "/avatar.jpg",
   location: "Toronto, ON",
   email: "mailto:mail@shaheem.dev",
@@ -26,28 +26,35 @@ export const LINKS = [
     name: "Portfolio",
     url: "https://shaheem.dev",
     icon: Globe,
-    description: "My personal portfolio website",
+    description: "Explore my projects and work",
     featured: true,
   },
   {
     name: "GitHub",
     url: "https://github.com/shaheem-pp",
     icon: Github,
-    description: "Check out my open source projects",
+    description: "Open source projects & code",
     featured: true,
   },
   {
     name: "LinkedIn",
     url: "https://linkedin.com/in/shaheem-pp",
     icon: Linkedin,
-    description: "Connect with me professionally",
+    description: "Let's connect professionally",
+    featured: true,
+  },
+  {
+    name: "Resume",
+    url: "https://shaheem.dev/resume.pdf",
+    icon: FileText,
+    description: "Download my latest resume",
     featured: true,
   },
   {
     name: "Email",
     url: "mailto:mail@shaheem.dev",
     icon: Mail,
-    description: "Get in touch via email",
+    description: "Drop me a message",
     featured: true,
   },
 
@@ -68,9 +75,9 @@ export const LINKS = [
   //   },
   {
     name: "YouTube",
-    url: "https://youtube.com/@shaheempp",
+    url: "https://www.youtube.com/c/ShaheemPP",
     icon: Youtube,
-    description: "Tech tutorials and vlogs",
+    description: "Tech content & tutorials",
     featured: false,
   },
   //   {
@@ -100,6 +107,7 @@ export const COLORS = {
   portfolio: "from-gray-700 to-gray-900",
   github: "from-gray-700 to-gray-900",
   linkedin: "from-blue-600 to-blue-700",
+  resume: "from-indigo-500 to-purple-500",
   email: "from-green-500 to-green-600",
   twitter: "from-sky-400 to-sky-500",
   instagram: "from-pink-500 to-rose-500",
